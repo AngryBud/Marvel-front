@@ -43,7 +43,8 @@ function App() {
                                                                 token={token} setToken={setToken}
                                                                 userName={userName} setUserName={setUserName}
                                                                 toggleModal={toggleModal} setToggleModal={setToggleModal}
-                                                                nameModal={nameModal} setNameModal={setNameModal}/>}/>
+                                                                nameModal={nameModal} setNameModal={setNameModal}
+                                                                refName={refName} setRefName={setRefName}/>}/>
                           <Route path="/comics/:characterId" element={<ComicWithChar favCharacter={favCharacter} setFavCharacter={setFavCharacter}
                                                                                     favComic={favComic} setFavComic={setFavComic}
                                                                                     token={token} setToken={setToken}
