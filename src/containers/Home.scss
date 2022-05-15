@@ -1,0 +1,42 @@
+.search{
+    width : 60%;
+    height: 3rem;
+    margin: 0 18vw;
+    margin-top: 4vh;
+    display: flex;
+    // margin-left: auto;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 2rem;
+    #searchBar{
+        width: 90%;
+        height: 2.5rem;
+        outline: none;
+        font-size: 1.5rem;
+        border: none;
+    }
+}
+
+.body{
+    width: 80%;
+    background-color: white;
+    margin: 4vh auto;
+    padding: 0 5vw;
+    padding-bottom: 10vh;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: 'Marvel', sans-serif;
+    // display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    // grid-auto-flow: row;
+    // padding-bottom: 10vh;
+    // grid-gap: 10px;
+    h1{
+        font-size: 4rem;
+    }
+}

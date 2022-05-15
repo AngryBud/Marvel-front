@@ -1,0 +1,17 @@
+.paginate{
+    display: flex;
+    border: 2px solid green;
+    background-color: azure;
+    width: 40vw;
+    margin: auto;
+    margin-bottom: 5vh;
+    justify-content: space-around;
+
+    li{
+        list-style: none;
+        background-color: white;
+    }
+    li:hover{
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,62 @@
+
+#link{
+    // border: 4px solid purple;
+    width: 22%;
+    height: 65vh;
+    margin-top: 5vh;
+    box-shadow: 0px 2px 7px 1px #000000;
+    // :hover{
+    //     box-shadow: 0 0 11px rgba(33,33,33,.5);
+    // }
+
+    .name{
+        height: 10%;
+        // border: 4px solid orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bolder;
+        // flex: 1;
+        // margin: auto;
+    }
+
+    h4{
+        text-align: center;
+        font-family: 'Marvel', sans-serif;
+        line-height: 1rem;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        color: #000000;
+        // margin-bottom: 3vh;
+    }
+
+    img{
+        
+        width: 100%;
+        height: 65%;
+        // border: 2px solid blue;
+        object-fit: cover;
+        // flex: 3;
+    }
+    img:hover{
+        box-shadow: 5px 5px 11px rgba(33,33,33,.5);
+        transform: scale(1.1);
+        // opacity: 0.2;
+    }
+    
+    .description{
+        width: 90%;
+        height: 17%;
+        // border: 4px solid green;
+        color: #000000;
+        overflow: scroll;
+        margin: auto;
+        margin-top: 1vh;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;
+    }
+    .description::-webkit-scrollbar {
+        display: none;
+    }
+    
+}
