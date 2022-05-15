@@ -26,11 +26,12 @@ const CharId = ({token, setToken, toggleModal, setToggleModal,
     },[characterId])
     const handleClick = async () =>{
         try {
-
             const fav = {"name": data.name, "description": data.description, "image": sourcePic, "token":token}
+            // console.log(fav);
             const response = await axios.post("https://marvel-back-node-v1.herokuapp.com/favoris/add",fav)
-            console.log(response.data);
-            setRefName(fav.token);
+            console.log("response data::",response.data);
+            // setRefName(fav.token);
+            setRefName(response.data);
             navigate("/favoris");
         } catch (error) {
           // console.log(error);

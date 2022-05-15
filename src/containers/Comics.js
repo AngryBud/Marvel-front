@@ -11,7 +11,7 @@ import logo from "../img/logo.png";
 import "./Comics.scss";
 
 const Comics = ({title, setTitle, token, setToken, toggleModal, setToggleModal,
-  nameModal, setNameModal, userName}) => {
+  nameModal, setNameModal, userName, refName, setRefName}) => {
     const [data, setData] = useState({});
     const [isLoading, setIsLoading] = useState(true);
     const [page, setPage] = useState(1);
@@ -72,7 +72,8 @@ const Comics = ({title, setTitle, token, setToken, toggleModal, setToggleModal,
                     </div>
                     <div className="body">
                         {data.results.map((com, index)=>{
-                            return <ListComics key={index} com={com}/>
+                            return <ListComics key={index} com={com} token={token} refName={refName}
+                                                setRefName={setRefName}/>
                         })}  
                     </div>
                     {data.count > 100 && (

@@ -8,8 +8,9 @@ const AllFav = ({each}) => {
               <div className="name">
                 <h4>{each.name}</h4>
               </div>
-              {notFound === -1 ?(<img id="pic" src ={each.image} alt="CharPic"/>)
-              :(<img id="pic" src = {coming} alt="comingPic"/>)}
+              {notFound === -1 ?(
+              <img id="pic" src ={each.image} alt="CharPic"/>)
+               :(<img id="pic" src = {coming} alt="comingPic"/>)}
               <div className="description">
                   {each.description ? (<p>{each.description}</p>):(<p>Description coming soon</p>)}
               </div>

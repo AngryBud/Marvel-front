@@ -17,17 +17,21 @@ const Favoris = ({token, setToken,
     const [fav, setFav] = useState([]);
     // const [page, setPage] = useState(1);
     const [isLoading, setIsLoading] = useState(true);
-
+    
     useEffect(() => {
         // const tok = {"token": refName}
         const fetchData = async () =>{
-            const tok = {"token": refName}
+
+            // console.log("fav",fav);
+            // console.log("ref",refName)
+            const tok = {"token": refName}     
             const response = await axios.post("https://marvel-back-node-v1.herokuapp.com/favoris",tok) 
+            // console.log("al",refName);
             setFav(response.data);
             setIsLoading(false);
         }
         fetchData();
-    })
+    },[refName])
 
     const navigate = useNavigate();
         return isLoading?(<span>En cours de chargement</span>) :(<>
@@ -69,6 +73,7 @@ const Favoris = ({token, setToken,
                             </div>):
                         (<div className="body">
                             {fav.map((each, index)=>{
+                                // console.log(fav);
                                 return <AllFav each={each} key={index}/>
                             })}
                         </div>)}
